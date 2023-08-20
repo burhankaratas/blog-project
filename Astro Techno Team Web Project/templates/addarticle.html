@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<br><br>
+<div class="container">
+    <h3> Makale Oluştur </h3>
+    <hr>
+
+    {% from "includes/formhelpers.html" import render_field %}
+
+    <form method="post">
+        {{ render_field(form.title) }}
+        {{ render_field(form.content) }} <br>
+        <button style="background-color: white; border: 1px solid black;"> Makale Ekle</button>
+    </form>
+
+</div>
+    
+{% endblock %}
+
+

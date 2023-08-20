@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    
+<br><br>
+<div class="container">
+    <span style="font-size: 45px;"> EKİBİMİZE KATILIN  </span> <br> <br>
+    <span style="font-size: 20px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque iusto incidunt necessitatibus sequi corporis perspiciatis ullam cumque quasi quos molestias consequatur facere magnam laboriosam, distinctio, magni harum veritatis? Eaque ab nesciunt incidunt rerum quia aliquam voluptatibus iure mollitia commodi fugit tempora unde sed aliquid perferendis facilis esse, consequatur vitae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum provident nostrum eaque temporibus, inventore debitis minima suscipit autem nemo error tempora ipsa iure aspernatur.</span>
+    <br><br>
+
+    {% from "includes/formhelpers.html" import render_field %}
+
+    <form method="post">
+        {{ render_field(form.name) }}
+        {{ render_field(form.email) }} 
+        {{ render_field(form.phoneNumber) }} 
+        {{ render_field(form.content) }} 
+        <button style="background-color: white; border: 1px solid black;"> Formu Gönder </button>
+    </form>
+{% endblock %}

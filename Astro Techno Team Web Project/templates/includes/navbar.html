@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="/" style="color: white;"> Astro Techno Team </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/hakkimizda" style="color: white;"> Hakkında </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/articles" style="color: white;"> Makaleler </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/bizekatilin" style="color: white;"> Bize Katılın </a>
+        </li>
+        
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+        
+        {% if session["logged_in"] == True %}
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/dashboard" style="color: white;"> Kontrol Paneli </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/logout" style="color: white;"> Çıkış Yap </a>
+        </li>
+          
+        {% else %}
+          
+        <li class="nav-item active">
+          <a class="nav-link" href="/login" style="color: white;"> Giriş Yap </a>
+        </li>
+          
+        {% endif %}
+
+
+        </ul>
+    </div>
+  </nav>

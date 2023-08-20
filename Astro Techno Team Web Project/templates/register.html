@@ -1,0 +1,21 @@
+{% include 'layout.html' %}
+
+
+{% block body %},
+{% from "includes/formhelpers.html" import render_field %}
+
+<br><br>
+<div class="container">
+    <h3> Kayıt Olun</h3>
+    <hr>
+    <form method="post">
+        {{ render_field(form.name) }}
+        {{ render_field(form.username) }}
+        {{ render_field(form.email) }}
+        {{ render_field(form.password) }}
+        {{ render_field(form.confirm) }} <br>
+        <button style="background-color: white; border: 1px solid black;"> Kayıt Ol</button>
+    </form>
+</div>
+
+{% endblock %}
