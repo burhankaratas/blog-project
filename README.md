@@ -16,10 +16,10 @@ Projede aşağıdaki başlıca özellikleri öne çıkarmak isterim:
 # Kullanılan Teknolojiler
 
 - Flask: 41%
-  ![Flask](https://progress-bar.dev/70)
+  ![Flask](https://progress-bar.dev/41)
   
-- HTML: 50%
-  ![HTML](https://progress-bar.dev/50)
+- HTML: 59%
+  ![HTML](https://progress-bar.dev/59)
   
 - Bootstrap: 30%
   ![Bootstrap](https://progress-bar.dev/30)
