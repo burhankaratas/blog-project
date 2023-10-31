@@ -15,7 +15,7 @@ Projede aşağıdaki başlıca özellikleri öne çıkarmak isterim:
 
 # Kullanılan Teknolojiler
 
-- Flask: 70%
+- Flask: 41%
   ![Flask](https://progress-bar.dev/70)
   
 - HTML: 50%
